@@ -24,7 +24,6 @@ body {
     height: 30px;
 }
 
-/* Главный блок */
 .hero {
     height: 400px;
     background-size: cover;
@@ -45,7 +44,7 @@ body {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки в ряд */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     margin-bottom: 60px;
 }
