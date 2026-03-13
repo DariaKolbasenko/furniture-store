@@ -3,90 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дарья Колбасенко - Интерьер</title>
+    <title>Интерьер</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <section class="hero">
-        <header class="header">
-            <div class="container center">
-                <div class="header-content">
-                    <img src="images/logo.png" alt="Дарья Колбасенко - Интерьер" class="logo">
-                    <nav class="nav">
-                        <a href="#">Каталог</a>
-                        <a href="#">Корзина</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <div class="center hero__wrap">
+            <header class="header">
+                <a href="#" class="logo-link">
+                    <img src="images/logo.png" alt="Логотип" class="logo">
+                </a>
 
-        <div class="container center">
-            <div class="hero-content">
-                <h1>Всё, чего заслуживает ваш дом</h1>
-                <p class="hero-subtitle">Наша мебель — ваше отражение</p>
-                <a href="#catalog" class="btn">Перейти в каталог</a>
-            </div>
-        </div>
-    </section>
+                <nav class="menu">
+                    <a href="#catalog">Каталог</a>
+                    <a href="#">Корзина</a>
+                </nav>
+            </header>
 
-    <section class="catalog" id="catalog">
-        <div class="container center">
-            <h2 class="catalog-title">Каталог товаров</h2>
-            <div class="products">
-                <div class="product-card">
-                    <img src="images/bed.jpg" alt="Кровать TATRAN" class="product-image">
-                    <h3 class="product-title">Кровать TATRAN</h3>
-                    <p class="product-desc">Основание из натурального дерева</p>
-                    <p class="product-price">120 000 ₽</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/chair1.jpg" alt="Кресло VILORA" class="product-image">
-                    <h3 class="product-title">Кресло VILORA</h3>
-                    <p class="product-desc">Мягкое кресло из натуральной ткани</p>
-                    <p class="product-price">21 000 ₽</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/table.jpg" alt="Стол MENU" class="product-image">
-                    <h3 class="product-title">Стол MENU</h3>
-                    <p class="product-desc">Обеденный стол из массива дуба</p>
-                    <p class="product-price">34 000 ₽</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/chair2.jpg" alt="Кресло ASKESTA" class="product-image">
-                    <h3 class="product-title">Кресло ASKESTA</h3>
-                    <p class="product-desc">Современное кресло с подлокотниками</p>
-                    <p class="product-price">68 000 ₽</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/sofa1.jpg" alt="Стол NORMAN" class="product-image">
-                    <h3 class="product-title">Стол NORMAN</h3>
-                    <p class="product-desc">Журнальный стол в скандинавском стиле</p>
-                    <p class="product-price">40 000 ₽</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/sofa2.jpg" alt="Диван NASTAN" class="product-image">
-                    <h3 class="product-title">Диван NASTAN</h3>
-                    <p class="product-desc">Угловой диван с мягкими подушками</p>
-                    <p class="product-price">80 000 ₽</p>
-                </div>
+            <div class="hero__content">
+                <h1 class="hero__title">Всё, чего<br>заслуживает ваш дом</h1>
+                <p class="hero__text">Наша мебель — ваше отражение</p>
+                <a href="#catalog" class="hero__link">Перейти в каталог</a>
             </div>
         </div>
     </section>
+
+    <main>
+        <section class="catalog center" id="catalog">
+            <h2 class="catalog__title">Каталог товаров</h2>
+
+            <div class="product-box">
+                <article class="product">
+                    <img src="images/bed.jpg" alt="Кровать TATRAN" class="product__img">
+                    <h3 class="product__title">Кровать TATRAN</h3>
+                    <p class="product__desc">Основание из натурального дерева, мягкая спинка и привлекательный внешний вид.</p>
+                    <p class="product__price">120 000 руб.</p>
+                </article>
+
+                <article class="product">
+                    <img src="images/chair1.jpg" alt="Кресло VILORA" class="product__img">
+                    <h3 class="product__title">Кресло VILORA</h3>
+                    <p class="product__desc">Мягкое кресло для отдыха и чтения. Украсит любую комнату и создаст уют.</p>
+                    <p class="product__price">21 000 руб.</p>
+                </article>
+
+                <article class="product">
+                    <img src="images/table.jpg" alt="Стол MENU" class="product__img">
+                    <h3 class="product__title">Стол MENU</h3>
+                    <p class="product__desc">Лаконичный стол из натуральных материалов для гостиной или обеденной зоны.</p>
+                    <p class="product__price">34 000 руб.</p>
+                </article>
+
+                <article class="product">
+                    <img src="images/chair2.jpg" alt="Кресло ASKESTA" class="product__img">
+                    <h3 class="product__title">Кресло ASKESTA</h3>
+                    <p class="product__desc">Высококачественный и комфортный вариант для современного интерьера.</p>
+                    <p class="product__price">68 000 руб.</p>
+                </article>
+
+                <article class="product">
+                    <img src="images/sofa1.jpg" alt="Стол NORMAN" class="product__img">
+                    <h3 class="product__title">Стол NORMAN</h3>
+                    <p class="product__desc">Прекрасно подойдет для спальни, кухни, террасы или рабочего кабинета.</p>
+                    <p class="product__price">40 000 руб.</p>
+                </article>
+
+                <article class="product">
+                    <img src="images/sofa2.jpg" alt="Диван NASTAN" class="product__img">
+                    <h3 class="product__title">Диван NASTAN</h3>
+                    <p class="product__desc">Мягкий, отличается простотой линий и форм, при этом очень удобный.</p>
+                    <p class="product__price">80 000 руб.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="container center">
+        <div class="center">
             <p>Сайт был сверстан Даша Колбасенко</p>
         </div>
     </footer>
-
 </body>
 </html>
