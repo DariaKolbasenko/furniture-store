@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, sans-serif;
     color: #000000;
@@ -19,8 +15,8 @@ a {
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 .center {
@@ -32,40 +28,42 @@ img {
 
 .hero {
     min-height: 735px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("images/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .header {
-    height: 77px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    min-height: 77px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding-top: 18px;
 }
 
 .logo-link {
-    background-color: #ffffff;
-    padding: 14px 28px;
     display: inline-block;
-    margin-top: 18px;
+    background-color: #ffffff;
+    padding: 18px 28px;
 }
 
 .logo {
     width: 170px;
+    height: auto;
 }
 
 .menu {
     display: flex;
     gap: 32px;
+    padding-top: 10px;
 }
 
 .menu a {
-    color: #ffffff;
     font-size: 16px;
     line-height: 20px;
+    color: #ffffff;
 }
 
 .hero-content {
@@ -74,30 +72,31 @@ img {
 }
 
 .hero-title {
-    color: #ffffff;
     font-size: 64px;
     line-height: 70px;
     font-weight: 600;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
 .hero-text {
-    color: #ffffff;
     font-size: 24px;
     line-height: 32px;
+    color: #ffffff;
     margin-bottom: 16px;
 }
 
 .hero-link {
-    color: #ffffff;
     font-size: 16px;
     line-height: 24px;
+    color: #ffffff;
     border-bottom: 1px solid #ffffff;
     padding-bottom: 2px;
 }
 
-.main {
+.catalog {
     padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .catalog-title {
@@ -145,7 +144,6 @@ img {
 }
 
 .footer {
-    margin-top: 64px;
     background-color: #f7f6f6;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -189,17 +187,14 @@ img {
     }
 
     .header {
-        height: auto;
-        padding-top: 16px;
-        padding-bottom: 16px;
         flex-direction: column;
-        gap: 16px;
         align-items: flex-start;
+        gap: 16px;
+        padding-bottom: 16px;
     }
 
     .logo-link {
-        margin-top: 0;
-        padding: 12px 18px;
+        padding: 14px 18px;
     }
 
     .logo {
@@ -208,6 +203,7 @@ img {
 
     .menu {
         gap: 20px;
+        padding-top: 0;
     }
 
     .menu a {
@@ -227,6 +223,11 @@ img {
     .hero-text {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .catalog {
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     .catalog-title {
