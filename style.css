@@ -9,48 +9,52 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
     color: #000000;
     background-color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
-    display: block;
     max-width: 100%;
+    display: block;
 }
 
 .center {
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .hero {
     min-height: 735px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url('images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.hero__wrap {
-    display: flex;
-    flex-direction: column;
-}
-
 .header {
-    min-height: 76px;
+    height: 77px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-    padding-top: 16px;
+}
+
+.logo-link {
+    background-color: #ffffff;
+    padding: 14px 28px;
+    display: inline-block;
+    margin-top: 18px;
 }
 
 .logo {
-    width: 198px;
-    height: auto;
+    width: 170px;
 }
 
 .menu {
@@ -59,52 +63,51 @@ img {
 }
 
 .menu a {
+    color: #ffffff;
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 400;
 }
 
-.hero__content {
-    padding-top: 147px;
-    color: #ffffff;
+.hero-content {
+    padding-top: 145px;
     max-width: 430px;
 }
 
-.hero__title {
+.hero-title {
+    color: #ffffff;
     font-size: 64px;
     line-height: 70px;
     font-weight: 600;
     margin-bottom: 16px;
 }
 
-.hero__text {
+.hero-text {
+    color: #ffffff;
     font-size: 24px;
     line-height: 32px;
-    font-weight: 400;
     margin-bottom: 16px;
 }
 
-.hero__link {
+.hero-link {
+    color: #ffffff;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
 }
 
-.catalog {
+.main {
     padding-top: 64px;
-    padding-bottom: 64px;
 }
 
-.catalog__title {
+.catalog-title {
     font-size: 48px;
     line-height: 58px;
     font-weight: 600;
     margin-bottom: 32px;
 }
 
-.product-box {
+.products {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 32px;
@@ -114,44 +117,45 @@ img {
     width: calc((100% - 64px) / 3);
 }
 
-.product__img {
+.product img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-.product__title {
+.product h3 {
     font-size: 24px;
     line-height: 29px;
     font-weight: 500;
     margin-bottom: 8px;
 }
 
-.product__desc {
+.product-text {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
     margin-bottom: 12px;
 }
 
-.product__price {
+.price {
     font-size: 24px;
     line-height: 29px;
     font-weight: 500;
 }
 
 .footer {
+    margin-top: 64px;
     background-color: #f7f6f6;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .footer p {
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
+    color: #000000;
 }
 
 @media (max-width: 1024px) {
@@ -159,12 +163,12 @@ img {
         min-height: 620px;
     }
 
-    .hero__title {
+    .hero-title {
         font-size: 52px;
         line-height: 58px;
     }
 
-    .catalog__title {
+    .catalog-title {
         font-size: 40px;
         line-height: 48px;
     }
@@ -185,12 +189,21 @@ img {
     }
 
     .header {
-        min-height: 57px;
-        padding-top: 12px;
+        height: auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .logo-link {
+        margin-top: 0;
+        padding: 12px 18px;
     }
 
     .logo {
-        width: 120px;
+        width: 130px;
     }
 
     .menu {
@@ -201,33 +214,28 @@ img {
         font-size: 14px;
     }
 
-    .hero__content {
+    .hero-content {
         padding-top: 90px;
-        max-width: 343px;
+        max-width: 100%;
     }
 
-    .hero__title {
+    .hero-title {
         font-size: 40px;
         line-height: 44px;
     }
 
-    .hero__text {
+    .hero-text {
         font-size: 18px;
         line-height: 24px;
     }
 
-    .catalog {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-
-    .catalog__title {
+    .catalog-title {
         font-size: 32px;
-        line-height: 39px;
+        line-height: 38px;
         margin-bottom: 24px;
     }
 
-    .product-box {
+    .products {
         gap: 32px;
     }
 
@@ -235,12 +243,12 @@ img {
         width: 100%;
     }
 
-    .product__img {
+    .product img {
         height: 220px;
     }
 
-    .product__title,
-    .product__price {
+    .product h3,
+    .price {
         font-size: 20px;
         line-height: 24px;
     }
