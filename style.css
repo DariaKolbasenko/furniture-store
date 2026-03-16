@@ -31,15 +31,24 @@ background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/he
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-position:relative;
 }
 
 .header{
 height:77px;
 display:flex;
-justify-content:flex-end;
+justify-content:space-between;
 align-items:center;
 border-bottom:1px solid rgba(255,255,255,0.8);
+}
+
+.logo-box{
+background:#fff;
+padding:10px 16px;
+margin-top:18px;
+}
+
+.logo-box img{
+width:90px;
 }
 
 .menu{
@@ -52,21 +61,8 @@ color:#fff;
 font-size:16px;
 }
 
-.logo-box{
-background:#fff;
-padding:16px 24px;
-position:absolute;
-top:30px;
-left:50%;
-transform:translateX(-50%);
-}
-
-.logo-box img{
-width:120px;
-}
-
 .hero-content{
-padding-top:180px;
+padding-top:160px;
 max-width:420px;
 }
 
@@ -135,8 +131,7 @@ font-weight:500;
 
 .footer{
 background:#f7f6f6;
-padding-top:32px;
-padding-bottom:32px;
+padding:32px 0;
 margin-top:64px;
 }
 
