@@ -1,135 +1,194 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-font-family:'Montserrat',sans-serif;
-color:#000;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
-a{
-text-decoration:none;
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
-img{
-max-width:100%;
-display:block;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.center{
-max-width:1200px;
-margin:0 auto;
-padding:0 40px;
+/* Header */
+.header {
+    background: transparent;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
-/* HERO */
-
-.hero{
-height:700px;
-background:url("images/hero-bg.jpg") center/cover no-repeat;
-color:#fff;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding-top:24px;
-border-bottom:1px solid rgba(255,255,255,0.5);
-padding-bottom:16px;
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
 }
 
-.logo{
-font-size:32px;
-font-weight:600;
-color:#fff;
+.nav {
+    display: flex;
+    gap: 30px;
 }
 
-.menu{
-display:flex;
-gap:32px;
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    transition: opacity 0.3s;
 }
 
-.menu a{
-color:#fff;
-font-size:14px;
+.nav a:hover {
+    opacity: 0.7;
 }
 
-/* HERO TEXT */
-
-.hero-content{
-margin-top:120px;
-max-width:420px;
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-content h1{
-font-size:60px;
-line-height:66px;
-margin-bottom:16px;
+.hero-content {
+    padding-top: 100px;
 }
 
-.hero-content p{
-font-size:22px;
-margin-bottom:16px;
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-.hero-link{
-color:#fff;
-border-bottom:1px solid #fff;
+.hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
-/* CATALOG */
-
-.catalog{
-padding:80px 0;
+/* Catalog */
+.catalog {
+    padding: 80px 0;
+    background: #fff;
 }
 
-.catalog h2{
-font-size:40px;
-margin-bottom:40px;
+.catalog-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 40px;
 }
 
-.products{
-display:flex;
-flex-wrap:wrap;
-gap:40px 32px;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
 }
 
-.product{
-width:calc((100% - 64px)/3);
+.product-card {
+    width: calc(33.333% - 20px);
+    background: #fff;
 }
 
-.product img{
-height:250px;
-object-fit:cover;
-margin-bottom:12px;
+.product-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-.product h3{
-font-size:20px;
-margin-bottom:8px;
+.product-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.product p{
-font-size:14px;
-color:#777;
-margin-bottom:12px;
+.product-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
-.product span{
-font-size:20px;
-font-weight:500;
+.product-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
 }
 
-/* FOOTER */
-
-.footer{
-background:#f7f6f6;
-padding:32px 0;
+/* Footer */
+.footer {
+    background: #f7f6f8;
+    padding: 30px 0;
+    text-align: center;
 }
 
-.footer p{
-text-align:center;
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .catalog-title {
+        font-size: 24px;
+    }
+    
+    .product-card {
+        width: 100%;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav {
+        gap: 20px;
+    }
 }
